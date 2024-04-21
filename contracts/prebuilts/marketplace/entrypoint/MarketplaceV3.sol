@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -20,7 +20,7 @@ import { ERC721Holder } from "@openzeppelin/contracts/token/ERC721/utils/ERC721H
 import { ERC1155Holder, ERC1155Receiver } from "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
 
 //  ==========  Internal imports    ==========
-import { BaseRouter, IRouter, IRouterState } from "@thirdweb-dev/dynamic-contracts/src/presets/BaseRouter.sol";
+import { BaseRouter, IRouter, IRouterState } from "@egiftcard/dynamic-contracts/src/presets/BaseRouter.sol";
 import { ERC165 } from "../../../eip/ERC165.sol";
 
 import "../../../extension/Multicall.sol";
@@ -33,7 +33,7 @@ import "../../../extension/upgradeable/ERC2771ContextUpgradeable.sol";
 import { RoyaltyPaymentsLogic } from "../../../extension/upgradeable/RoyaltyPayments.sol";
 
 /**
- * @author  thirdweb.com
+ * @author  egiftcard.cc
  */
 contract MarketplaceV3 is
     Initializable,

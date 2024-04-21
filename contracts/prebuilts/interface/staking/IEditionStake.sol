@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 /**
- *  Thirdweb's EditionStake smart contract allows users to stake their ERC-1155 NFTs
+ *  Egiftcard's EditionStake smart contract allows users to stake their ERC-1155 NFTs
  *  and earn rewards in form of an ERC-20 token.
  *
  *  note:

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -15,7 +15,7 @@ pragma solidity ^0.8.11;
 //Interface
 import { ITokenERC20 } from "../interface/token/ITokenERC20.sol";
 
-import "../../infra/interface/IThirdwebContract.sol";
+import "../../infra/interface/IEgiftcardContract.sol";
 import "../../extension/interface/IPlatformFee.sol";
 import "../../extension/interface/IPrimarySale.sol";
 
@@ -41,7 +41,7 @@ import "../../lib/FeeType.sol";
 
 contract TokenERC20 is
     Initializable,
-    IThirdwebContract,
+    IEgiftcardContract,
     IPrimarySale,
     IPlatformFee,
     ReentrancyGuardUpgradeable,
@@ -68,7 +68,7 @@ contract TokenERC20 is
     /// @dev Returns the URI for the storefront-level metadata of the contract.
     string public contractURI;
 
-    /// @dev Max bps in the thirdweb system
+    /// @dev Max bps in the egiftcard system
     uint128 internal constant MAX_BPS = 10_000;
 
     /// @dev The % of primary sales collected by the contract as fees.

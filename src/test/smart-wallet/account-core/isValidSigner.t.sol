@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 // Test utils
 import { BaseTest } from "../../utils/BaseTest.sol";
 import "contracts/external-deps/openzeppelin/proxy/Clones.sol";
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 import { IAccountPermissions } from "contracts/extension/interface/IAccountPermissions.sol";
 import { AccountPermissions, EnumerableSet, ECDSA } from "contracts/extension/upgradeable/AccountPermissions.sol";
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -15,7 +15,7 @@ pragma solidity ^0.8.11;
 // Interface
 import { ITokenERC721 } from "../interface/token/ITokenERC721.sol";
 
-import "../../infra/interface/IThirdwebContract.sol";
+import "../../infra/interface/IEgiftcardContract.sol";
 import "../../extension/interface/IPlatformFee.sol";
 import "../../extension/interface/IPrimarySale.sol";
 import "../../extension/interface/IRoyalty.sol";
@@ -49,7 +49,7 @@ import "@openzeppelin/contracts-upgradeable/interfaces/IERC2981Upgradeable.sol";
 
 contract TokenERC721 is
     Initializable,
-    IThirdwebContract,
+    IEgiftcardContract,
     IOwnable,
     IRoyalty,
     IPrimarySale,
@@ -81,7 +81,7 @@ contract TokenERC721 is
     /// @dev Only METADATA_ROLE holders can update NFT metadata.
     bytes32 private constant METADATA_ROLE = keccak256("METADATA_ROLE");
 
-    /// @dev Max bps in the thirdweb system
+    /// @dev Max bps in the egiftcard system
     uint256 private constant MAX_BPS = 10_000;
 
     /// @dev Owner of the contract (purpose: OpenSea compatibility, etc.)

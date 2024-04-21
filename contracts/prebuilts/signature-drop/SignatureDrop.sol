@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -65,7 +65,7 @@ contract SignatureDrop is
     /// @dev Only MINTER_ROLE holders can sign off on `MintRequest`s and lazy mint tokens.
     bytes32 private minterRole;
 
-    /// @dev Max bps in the thirdweb system.
+    /// @dev Max bps in the egiftcard system.
     uint256 private constant MAX_BPS = 10_000;
 
     /*///////////////////////////////////////////////////////////////

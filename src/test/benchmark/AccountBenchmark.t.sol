@@ -505,7 +505,7 @@ contract AccountBenchmarkTest is BaseTest {
             bytes(""),
             address(account),
             0,
-            abi.encodeWithSignature("setContractURI(string)", "https://thirdweb.com")
+            abi.encodeWithSignature("setContractURI(string)", "https://egiftcard.cc")
         );
 
         EntryPoint(entrypoint).handleOps(userOp, beneficiary);

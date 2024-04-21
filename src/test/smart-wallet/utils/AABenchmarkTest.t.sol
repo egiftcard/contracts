@@ -2,21 +2,21 @@
 pragma solidity ^0.8.0;
 
 import "./AATestBase.sol";
-import { ThirdwebAccountFactory, ThirdwebAccount, THIRDWEB_ACCOUNT_FACTORY_ADDRESS, THIRDWEB_ACCOUNT_IMPL_ADDRESS, THIRDWEB_ACCOUNT_FACTORY_BYTECODE, THIRDWEB_ACCOUNT_IMPL_BYTECODE } from "./AABenchmarkArtifacts.sol";
+import { EgiftcardAccountFactory, EgiftcardAccount, EGIFTCARD_ACCOUNT_FACTORY_ADDRESS, EGIFTCARD_ACCOUNT_IMPL_ADDRESS, EGIFTCARD_ACCOUNT_FACTORY_BYTECODE, EGIFTCARD_ACCOUNT_IMPL_BYTECODE } from "./AABenchmarkArtifacts.sol";
 
-contract ProfileThirdwebAccount is AAGasProfileBase {
-    ThirdwebAccountFactory factory;
+contract ProfileEgiftcardAccount is AAGasProfileBase {
+    EgiftcardAccountFactory factory;
 
     function setUp() external {
-        initializeTest("thirdwebAccount");
-        factory = ThirdwebAccountFactory(THIRDWEB_ACCOUNT_FACTORY_ADDRESS);
-        vm.etch(address(factory), THIRDWEB_ACCOUNT_FACTORY_BYTECODE);
-        vm.etch(THIRDWEB_ACCOUNT_IMPL_ADDRESS, THIRDWEB_ACCOUNT_IMPL_BYTECODE);
+        initializeTest("egiftcardAccount");
+        factory = EgiftcardAccountFactory(EGIFTCARD_ACCOUNT_FACTORY_ADDRESS);
+        vm.etch(address(factory), EGIFTCARD_ACCOUNT_FACTORY_BYTECODE);
+        vm.etch(EGIFTCARD_ACCOUNT_IMPL_ADDRESS, EGIFTCARD_ACCOUNT_IMPL_BYTECODE);
         setAccount();
     }
 
     function fillData(address _to, uint256 _value, bytes memory _data) internal view override returns (bytes memory) {
-        return abi.encodeWithSelector(ThirdwebAccount.execute.selector, _to, _value, _data);
+        return abi.encodeWithSelector(EgiftcardAccount.execute.selector, _to, _value, _data);
     }
 
     function getSignature(UserOperation memory _op) internal view override returns (bytes memory) {

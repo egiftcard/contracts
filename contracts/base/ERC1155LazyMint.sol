@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import { ERC1155 } from "../eip/ERC1155.sol";
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./interface/IDropSinglePhase1155_V1.sol";
 import "../../lib/MerkleProof.sol";

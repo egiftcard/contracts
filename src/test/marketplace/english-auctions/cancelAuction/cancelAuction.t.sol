@@ -13,7 +13,7 @@ import { ERC721Base } from "contracts/base/ERC721Base.sol";
 
 import { IEnglishAuctions } from "contracts/prebuilts/marketplace/IMarketplace.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 contract ReentrantRecipient is ERC1155Holder {
     function onERC1155Received(

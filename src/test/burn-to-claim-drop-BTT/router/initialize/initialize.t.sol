@@ -15,7 +15,7 @@ import { RoyaltyStorage } from "contracts/extension/upgradeable/init/RoyaltyInit
 import { PrimarySaleStorage } from "contracts/extension/upgradeable/init/PrimarySaleInit.sol";
 import { PermissionsStorage } from "contracts/extension/upgradeable/init/PermissionsInit.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 import { TWProxy } from "contracts/infra/TWProxy.sol";
 

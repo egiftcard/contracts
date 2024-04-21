@@ -29,24 +29,24 @@ contract AABenchmarkPrepare is BaseTest {
         bytes memory accountImplBytecode = accountImplAddress.code;
 
         string memory accountFactoryAddressString = string.concat(
-            "address constant THIRDWEB_ACCOUNT_FACTORY_ADDRESS = ",
+            "address constant EGIFTCARD_ACCOUNT_FACTORY_ADDRESS = ",
             Strings.toHexStringChecksummed(accountFactoryAddress),
             ";"
         );
         string memory accountFactoryBytecodeString = string.concat(
-            'bytes constant THIRDWEB_ACCOUNT_FACTORY_BYTECODE = hex"',
+            'bytes constant EGIFTCARD_ACCOUNT_FACTORY_BYTECODE = hex"',
             Strings.toHexStringNoPrefix(accountFactoryBytecode),
             '"',
             ";"
         );
 
         string memory accountImplAddressString = string.concat(
-            "address constant THIRDWEB_ACCOUNT_IMPL_ADDRESS = ",
+            "address constant EGIFTCARD_ACCOUNT_IMPL_ADDRESS = ",
             Strings.toHexStringChecksummed(accountImplAddress),
             ";"
         );
         string memory accountImplBytecodeString = string.concat(
-            'bytes constant THIRDWEB_ACCOUNT_IMPL_BYTECODE = hex"',
+            'bytes constant EGIFTCARD_ACCOUNT_IMPL_BYTECODE = hex"',
             Strings.toHexStringNoPrefix(accountImplBytecode),
             '"',
             ";"
@@ -58,7 +58,7 @@ contract AABenchmarkPrepare is BaseTest {
 
         vm.writeLine(path, "");
         vm.writeLine(path, "pragma solidity ^0.8.0;");
-        vm.writeLine(path, "interface ThirdwebAccountFactory {");
+        vm.writeLine(path, "interface EgiftcardAccountFactory {");
         vm.writeLine(
             path,
             "    function createAccount(address _admin, bytes calldata _data) external returns (address);"
@@ -69,7 +69,7 @@ contract AABenchmarkPrepare is BaseTest {
         );
         vm.writeLine(path, "}");
 
-        vm.writeLine(path, "interface ThirdwebAccount {");
+        vm.writeLine(path, "interface EgiftcardAccount {");
         vm.writeLine(path, "    function execute(address _target, uint256 _value, bytes calldata _calldata) external;");
         vm.writeLine(path, "}");
         vm.writeLine(path, accountFactoryAddressString);

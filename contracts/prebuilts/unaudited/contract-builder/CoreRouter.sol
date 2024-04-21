@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// @author: thirdweb (https://github.com/thirdweb-dev/dynamic-contracts)
+// @author: egiftcard (https://github.com/egiftcard/dynamic-contracts)
 
 pragma solidity ^0.8.0;
 

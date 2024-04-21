@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 // [ DEPRECATED CONTRACT: use `contracts/extension/interface/IDelayedReveal.sol` instead ]
 
 /**
- *  Thirdweb's `DelayedReveal` is a contract extension for base NFT contracts. It lets you create batches of
- *  'delayed-reveal' NFTs. You can learn more about the usage of delayed reveal NFTs here - https://blog.thirdweb.com/delayed-reveal-nfts
+ *  Egiftcard's `DelayedReveal` is a contract extension for base NFT contracts. It lets you create batches of
+ *  'delayed-reveal' NFTs. You can learn more about the usage of delayed reveal NFTs here - https://blog.egiftcard.cc/delayed-reveal-nfts
  */
 
 interface IDelayedRevealDeprecated {

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./interface/IDelayedReveal.sol";
 
 /**
  *  @title   Delayed Reveal
- *  @notice  Thirdweb's `DelayedReveal` is a contract extension for base NFT contracts. It lets you create batches of
- *           'delayed-reveal' NFTs. You can learn more about the usage of delayed reveal NFTs here - https://blog.thirdweb.com/delayed-reveal-nfts
+ *  @notice  Egiftcard's `DelayedReveal` is a contract extension for base NFT contracts. It lets you create batches of
+ *           'delayed-reveal' NFTs. You can learn more about the usage of delayed reveal NFTs here - https://blog.egiftcard.cc/delayed-reveal-nfts
  */
 
 abstract contract DelayedReveal is IDelayedReveal {

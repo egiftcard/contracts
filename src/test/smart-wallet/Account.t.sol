@@ -759,11 +759,11 @@ contract SimpleAccountTest is BaseTest {
             bytes(""),
             address(account),
             0,
-            abi.encodeWithSignature("setContractURI(string)", "https://thirdweb.com")
+            abi.encodeWithSignature("setContractURI(string)", "https://egiftcard.cc")
         );
 
         EntryPoint(entrypoint).handleOps(userOp, beneficiary);
-        assertEq(SimpleAccount(payable(account)).contractURI(), "https://thirdweb.com");
+        assertEq(SimpleAccount(payable(account)).contractURI(), "https://egiftcard.cc");
 
         address[] memory approvedTargets = new address[](0);
 
@@ -788,7 +788,7 @@ contract SimpleAccountTest is BaseTest {
             bytes(""),
             address(account),
             0,
-            abi.encodeWithSignature("setContractURI(string)", "https://thirdweb.com")
+            abi.encodeWithSignature("setContractURI(string)", "https://egiftcard.cc")
         );
 
         vm.expectRevert();

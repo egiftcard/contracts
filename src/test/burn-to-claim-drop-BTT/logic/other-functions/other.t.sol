@@ -10,7 +10,7 @@ import { PermissionsEnumerableImpl } from "contracts/extension/upgradeable/impl/
 
 import { ERC721AStorage } from "contracts/extension/upgradeable/init/ERC721AInit.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 import { TWProxy } from "contracts/infra/TWProxy.sol";
 import { Permissions } from "contracts/extension/Permissions.sol";

@@ -1,4 +1,4 @@
-import { ChainId, CONTRACT_ADDRESSES } from "@thirdweb-dev/sdk";
+import { ChainId, CONTRACT_ADDRESSES } from "@egiftcard/sdk";
 
 export const nativeTokenWrapper: Record<number, string> = {
   1: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // mainnet

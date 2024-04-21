@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./ERC1155LazyMint.sol";
 import "../extension/DelayedReveal.sol";
@@ -21,7 +21,7 @@ import "../extension/DelayedReveal.sol";
  *  'Delayed reveal' is a mechanism by which you can distribute NFTs to your audience and reveal the metadata of the distributed
  *  NFTs, after the fact.
  *
- *  You can read more about how the `DelayedReveal` extension works, here: https://blog.thirdweb.com/delayed-reveal-nfts
+ *  You can read more about how the `DelayedReveal` extension works, here: https://blog.egiftcard.cc/delayed-reveal-nfts
  */
 
 contract ERC1155DelayedReveal is ERC1155LazyMint, DelayedReveal {

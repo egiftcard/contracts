@@ -1,12 +1,12 @@
 # Pack design document.
 
-This is a live document that explains what the [thirdweb](https://thirdweb.com/) `Pack` smart contract is, how it works and can be used, and why it is designed the way it is.
+This is a live document that explains what the [egiftcard](https://egiftcard.cc/) `Pack` smart contract is, how it works and can be used, and why it is designed the way it is.
 
-The document is written for technical and non-technical readers. To ask further questions about thirdweb’s `Pack` contract, please join the [thirdweb discord](https://discord.gg/thirdweb) or create a github issue.
+The document is written for technical and non-technical readers. To ask further questions about egiftcard’s `Pack` contract, please join the [egiftcard discord](https://discord.gg/egiftcard) or create a github issue.
 
 # Background
 
-The thirdweb `Pack` contract is a lootbox mechanism. An account can bundle up arbitrary ERC20, ERC721 and ERC1155 tokens into a set of packs. A pack can then be opened in return for a selection of the tokens in the pack. The selection of tokens distributed on opening a pack depends on the relative supply of all tokens in the packs.
+The egiftcard `Pack` contract is a lootbox mechanism. An account can bundle up arbitrary ERC20, ERC721 and ERC1155 tokens into a set of packs. A pack can then be opened in return for a selection of the tokens in the pack. The selection of tokens distributed on opening a pack depends on the relative supply of all tokens in the packs.
 
 > **IMPORTANT**: _Pack functions, such as opening of packs, can be costly in terms of gas usage due to random selection of rewards. Please check your gas estimates/usage, and do a trial on testnets before any mainnet deployment._
 
@@ -14,7 +14,7 @@ The thirdweb `Pack` contract is a lootbox mechanism. An account can bundle up ar
 
 Let's say we want to create a set of packs with three kinds of rewards - 80 **circles**, 15 **squares**, and 5 **stars** — and we want exactly 1 reward to be distributed when a pack is opened.
 
-In this case, with thirdweb’s `Pack` contract, each pack is guaranteed to yield exactly 1 reward. To deliver this guarantee, the number of packs created is equal to the sum of the supplies of each reward. So, we now have `80 + 15 + 5` i.e. `100` packs at hand.
+In this case, with egiftcard’s `Pack` contract, each pack is guaranteed to yield exactly 1 reward. To deliver this guarantee, the number of packs created is equal to the sum of the supplies of each reward. So, we now have `80 + 15 + 5` i.e. `100` packs at hand.
 
 ![pack-diag-1.png](/assets/pack-diag-1.png)
 
@@ -242,12 +242,12 @@ We’ll now discuss some possible solutions for this design problem along with t
 
   **Why we’re not using this solution:**
 
-  - Chainlink VRF v1 is only on Ethereum and Polygon, and Chainlink VRF v2 (current version) is only on Ethereum and Binance. As a result, this solution cannot be used by itself across all the chains thirdweb supports (and wants to support).
-  - Each random number request costs an end user Chainlink’s LINK token — it is costly, and seems like a random requirement for using a thirdweb offering.
+  - Chainlink VRF v1 is only on Ethereum and Polygon, and Chainlink VRF v2 (current version) is only on Ethereum and Binance. As a result, this solution cannot be used by itself across all the chains egiftcard supports (and wants to support).
+  - Each random number request costs an end user Chainlink’s LINK token — it is costly, and seems like a random requirement for using a egiftcard offering.
 
 - **Delayed-reveal randomness: rewards for all packs in a set of packs visible all at once**
   By ‘delayed-reveal’ randomness, we mean the following —
-  - When creating a set of packs, the creator provides (1) an encrypted seed i.e. integer (see the [encryption pattern used in thirdweb’s delayed-reveal NFTs](https://blog.thirdweb.com/delayed-reveal-nfts#step-1-encryption)), and (2) a future block number.
+  - When creating a set of packs, the creator provides (1) an encrypted seed i.e. integer (see the [encryption pattern used in egiftcard’s delayed-reveal NFTs](https://blog.egiftcard.cc/delayed-reveal-nfts#step-1-encryption)), and (2) a future block number.
   - The created packs are _non-transferrable_ by any address except the (1) pack creator, or (2) addresses manually approved by the pack creator. This is to let the creator distribute packs as they desire, _and_ is essential for the next step.
   - After the specified future block number passes, the creator submits the unencrypted seed to the `Pack` contract. Whenever a pack owner now opens a pack, we calculate the random number to be used in the opening process as follows:
     ```solidity

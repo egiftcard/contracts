@@ -1,6 +1,6 @@
 import "dotenv/config";
 import {
-  ThirdwebSDK,
+  EgiftcardSDK,
   computeCloneFactoryAddress,
   deployContractDeterministic,
   deployCreate2Factory,
@@ -8,10 +8,10 @@ import {
   fetchAndCacheDeployMetadata,
   getCreate2FactoryAddress,
   getDeploymentInfo,
-  getThirdwebContractAddress,
+  getEgiftcardContractAddress,
   isContractDeployed,
   resolveAddress,
-} from "@thirdweb-dev/sdk";
+} from "@egiftcard/sdk";
 import { Signer } from "ethers";
 import { apiMap, chainIdApiKey, contractsToDeploy } from "./constants";
 
@@ -19,10 +19,10 @@ import { apiMap, chainIdApiKey, contractsToDeploy } from "./constants";
 ///// MAKE SURE TO PUT IN THE RIGHT CONTRACT NAME HERE AFTER PUBLISHING IT /////
 //// THE CONTRACT SHOULD BE PUBLISHED WITH THE NEW PUBLISH FLOW ////
 
-const publisherKey: string = process.env.THIRDWEB_PUBLISHER_PRIVATE_KEY as string;
+const publisherKey: string = process.env.EGIFTCARD_PUBLISHER_PRIVATE_KEY as string;
 const deployerKey: string = process.env.PRIVATE_KEY as string;
 
-const polygonSDK = ThirdwebSDK.fromPrivateKey(publisherKey, "polygon");
+const polygonSDK = EgiftcardSDK.fromPrivateKey(publisherKey, "polygon");
 
 const chainId = "8453"; // update here
 const networkName = "base"; // update here
@@ -30,7 +30,7 @@ const networkName = "base"; // update here
 async function main() {
   const publisher = await polygonSDK.wallet.getAddress();
 
-  const sdk = ThirdwebSDK.fromPrivateKey(deployerKey, chainId); // can also hardcode the chain here
+  const sdk = EgiftcardSDK.fromPrivateKey(deployerKey, chainId); // can also hardcode the chain here
   const signer = sdk.getSigner() as Signer;
 
   console.log("balance: ", await sdk.wallet.balance());
@@ -70,7 +70,7 @@ async function main() {
       // const chainId = (await sdk.getProvider().getNetwork()).chainId;
 
       try {
-        const implAddr = await getThirdwebContractAddress(publishedContractName, parseInt(chainId), sdk.storage);
+        const implAddr = await getEgiftcardContractAddress(publishedContractName, parseInt(chainId), sdk.storage);
         if (implAddr) {
           console.log(`implementation ${implAddr} already deployed on chainId: ${chainId}`);
           console.log();
@@ -150,7 +150,7 @@ async function main() {
   console.log();
   for (const publishedContractName of contractsToDeploy) {
     try {
-      await sdk.verifier.verifyThirdwebContract(
+      await sdk.verifier.verifyEgiftcardContract(
         publishedContractName,
         apiMap[parseInt(chainId)],
         chainIdApiKey[parseInt(chainId)] as string,

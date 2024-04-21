@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./PlatformFeeStorage.sol";
 import "../interface/IPlatformFee.sol";
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  *
  *  @title   Platform Fee
- *  @notice  Thirdweb's `PlatformFee` is a contract extension to be used with any base contract. It exposes functions for setting and reading
+ *  @notice  Egiftcard's `PlatformFee` is a contract extension to be used with any base contract. It exposes functions for setting and reading
  *           the recipient of platform fee and the platform fee basis points, and lets the inheriting contract perform conditional logic
  *           that uses information about platform fees, if desired.
  */

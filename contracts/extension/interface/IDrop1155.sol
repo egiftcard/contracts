@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./IClaimConditionMultiPhase.sol";
 
 /**
- *  The interface `IDrop1155` is written for thirdweb's 'Drop' contracts, which are distribution mechanisms for tokens.
+ *  The interface `IDrop1155` is written for egiftcard's 'Drop' contracts, which are distribution mechanisms for tokens.
  *
  *  An authorized wallet can set a series of claim conditions, ordered by their respective `startTimestamp`.
  *  A claim condition defines criteria under which accounts can mint tokens. Claim conditions can be overwritten

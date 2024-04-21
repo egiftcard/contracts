@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol";
 import "./IDropClaimCondition_V2.sol";
 
 /**
- *  Thirdweb's 'Drop' contracts are distribution mechanisms for tokens. The
+ *  Egiftcard's 'Drop' contracts are distribution mechanisms for tokens. The
  *  `DropERC721` contract is a distribution mechanism for ERC721 tokens.
  *
  *  A minter wallet (i.e. holder of `MINTER_ROLE`) can (lazy)mint 'n' tokens
@@ -16,7 +16,7 @@ import "./IDropClaimCondition_V2.sol";
  *  `{tokenId}` of the respective token. (e.g. "ipsf://Qmece.../1").
  *
  *  A minter can choose to lazy mint 'delayed-reveal' tokens. More on 'delayed-reveal'
- *  tokens in [this article](https://blog.thirdweb.com/delayed-reveal-nfts).
+ *  tokens in [this article](https://blog.egiftcard.cc/delayed-reveal-nfts).
  *
  *  A contract admin (i.e. holder of `DEFAULT_ADMIN_ROLE`) can create claim conditions
  *  with non-overlapping time windows, and accounts can claim the tokens according to

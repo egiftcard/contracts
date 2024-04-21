@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -14,7 +14,7 @@ pragma solidity ^0.8.11;
 
 // Base
 import "../../external-deps/openzeppelin/finance/PaymentSplitterUpgradeable.sol";
-import "../../infra/interface/IThirdwebContract.sol";
+import "../../infra/interface/IEgiftcardContract.sol";
 
 // Meta-tx
 import "../../external-deps/openzeppelin/metatx/ERC2771ContextUpgradeable.sol";
@@ -28,7 +28,7 @@ import "../../lib/FeeType.sol";
 import "../../extension/upgradeable/ReentrancyGuard.sol";
 
 contract Split is
-    IThirdwebContract,
+    IEgiftcardContract,
     Initializable,
     Multicall,
     ERC2771ContextUpgradeable,
@@ -39,7 +39,7 @@ contract Split is
     bytes32 private constant MODULE_TYPE = bytes32("Split");
     uint128 private constant VERSION = 1;
 
-    /// @dev Max bps in the thirdweb system
+    /// @dev Max bps in the egiftcard system
     uint128 private constant MAX_BPS = 10_000;
 
     /// @dev Contract level metadata.

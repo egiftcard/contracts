@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./interface/IPrimarySale_V1.sol";
 
 /**
  *  @title   Primary Sale
- *  @notice  Thirdweb's `PrimarySale` is a contract extension to be used with any base contract. It exposes functions for setting and reading
+ *  @notice  Egiftcard's `PrimarySale` is a contract extension to be used with any base contract. It exposes functions for setting and reading
  *           the recipient of primary sales, and lets the inheriting contract perform conditional logic that uses information about
  *           primary sales, if desired.
  */

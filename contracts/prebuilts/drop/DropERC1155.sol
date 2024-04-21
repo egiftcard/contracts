@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -69,7 +69,7 @@ contract DropERC1155 is
     /// @dev Only METADATA_ROLE holders can reveal the URI for a batch of delayed reveal NFTs, and update or freeze batch metadata.
     bytes32 private metadataRole;
 
-    /// @dev Max bps in the thirdweb system.
+    /// @dev Max bps in the egiftcard system.
     uint256 private constant MAX_BPS = 10_000;
 
     /*///////////////////////////////////////////////////////////////

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.1;
 
-/// @author thirdweb, OpenZeppelin Contracts (v4.9.0)
+/// @author egiftcard, OpenZeppelin Contracts (v4.9.0)
 
 /**
  * @dev Collection of functions related to the address type

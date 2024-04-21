@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "../interface/plugin/IRouter.sol";
 import "../Multicall.sol";
@@ -9,7 +9,7 @@ import "../../eip/ERC165.sol";
 import "../../external-deps/openzeppelin/utils/EnumerableSet.sol";
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  */
 library RouterStorage {
     /// @custom:storage-location erc7201:router.storage

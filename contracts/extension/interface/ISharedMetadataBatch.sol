@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache 2.0
 pragma solidity ^0.8.10;
 
-/// @author thirdweb
+/// @author egiftcard
 
 interface ISharedMetadataBatch {
     /// @notice Emitted when shared metadata is lazy minted.

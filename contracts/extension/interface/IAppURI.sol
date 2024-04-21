@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 /**
- *  Thirdweb's `AppURI` is a contract extension for any base contracts. It lets you set a metadata URI
+ *  Egiftcard's `AppURI` is a contract extension for any base contracts. It lets you set a metadata URI
  *  for you contract.
  *
  */

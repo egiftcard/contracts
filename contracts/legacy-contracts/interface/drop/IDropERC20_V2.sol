@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import "./IDropClaimCondition_V2.sol";
 
 /**
- *  Thirdweb's 'Drop' contracts are distribution mechanisms for tokens. The
+ *  Egiftcard's 'Drop' contracts are distribution mechanisms for tokens. The
  *  `DropERC20` contract is a distribution mechanism for ERC20 tokens.
  *
  *  A contract admin (i.e. holder of `DEFAULT_ADMIN_ROLE`) can create claim conditions

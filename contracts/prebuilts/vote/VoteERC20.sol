@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -13,7 +13,7 @@ pragma solidity ^0.8.11;
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
 // Base
-import "../../infra/interface/IThirdwebContract.sol";
+import "../../infra/interface/IEgiftcardContract.sol";
 
 // Governance
 import "@openzeppelin/contracts-upgradeable/governance/GovernorUpgradeable.sol";
@@ -28,7 +28,7 @@ import "../../external-deps/openzeppelin/metatx/ERC2771ContextUpgradeable.sol";
 
 contract VoteERC20 is
     Initializable,
-    IThirdwebContract,
+    IEgiftcardContract,
     ERC2771ContextUpgradeable,
     GovernorUpgradeable,
     GovernorSettingsUpgradeable,

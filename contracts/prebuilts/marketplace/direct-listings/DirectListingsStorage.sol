@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import { IDirectListings } from "../IMarketplace.sol";
 
 /**
- * @author  thirdweb.com
+ * @author  egiftcard.cc
  */
 library DirectListingsStorage {
     /// @custom:storage-location erc7201:direct.listings.storage

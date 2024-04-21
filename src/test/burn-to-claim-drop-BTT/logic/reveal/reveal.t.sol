@@ -9,7 +9,7 @@ import { Royalty } from "contracts/extension/upgradeable/Royalty.sol";
 import { BatchMintMetadata } from "contracts/extension/upgradeable/BatchMintMetadata.sol";
 import { IBurnToClaim } from "contracts/extension/interface/IBurnToClaim.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 import { TWProxy } from "contracts/infra/TWProxy.sol";
 

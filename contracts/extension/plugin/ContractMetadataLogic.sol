@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./ContractMetadataStorage.sol";
 import "../interface/IContractMetadata.sol";
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  *
  *  @title   Contract Metadata
- *  @notice  Thirdweb's `ContractMetadata` is a contract extension for any base contracts. It lets you set a metadata URI
+ *  @notice  Egiftcard's `ContractMetadata` is a contract extension for any base contracts. It lets you set a metadata URI
  *           for you contract.
  *           Additionally, `ContractMetadata` is necessary for NFT contracts that want royalties to get distributed on OpenSea.
  */

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 library ERC2771ContextStorage {
     /// @custom:storage-location erc7201:erc2771.context.storage

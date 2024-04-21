@@ -15,7 +15,7 @@ import { PlatformFee } from "contracts/extension/PlatformFee.sol";
 
 import { IEnglishAuctions } from "contracts/prebuilts/marketplace/IMarketplace.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 contract MockTransferAuctionTokens is EnglishAuctionsLogic {
     constructor(address _nativeTokenWrapper) EnglishAuctionsLogic(_nativeTokenWrapper) {}

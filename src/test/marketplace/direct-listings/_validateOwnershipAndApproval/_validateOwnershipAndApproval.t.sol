@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "../../../utils/BaseTest.sol";
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 import { TWProxy } from "contracts/infra/TWProxy.sol";
 import { MarketplaceV3 } from "contracts/prebuilts/marketplace/entrypoint/MarketplaceV3.sol";

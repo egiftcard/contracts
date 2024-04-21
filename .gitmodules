@@ -21,7 +21,7 @@
 	url = https://github.com/chiru-labs/ERC721A
 [submodule "lib/dynamic-contracts"]
 	path = lib/dynamic-contracts
-	url = https://github.com/thirdweb-dev/dynamic-contracts
+	url = https://github.com/egiftcard/dynamic-contracts
 [submodule "lib/solady"]
 	path = lib/solady
 	url = https://github.com/vectorized/solady

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //  ==========  External imports    ==========
 
@@ -16,7 +16,7 @@ import "../../extension/Multicall.sol";
 
 //  ==========  Internal imports    ==========
 
-import "../../infra/interface/IThirdwebContract.sol";
+import "../../infra/interface/IEgiftcardContract.sol";
 
 //  ==========  Features    ==========
 
@@ -33,7 +33,7 @@ import "../../lib/FeeType.sol";
 
 contract DropERC20_V2 is
     Initializable,
-    IThirdwebContract,
+    IEgiftcardContract,
     IPrimarySale,
     IPlatformFee,
     ReentrancyGuardUpgradeable,
@@ -59,7 +59,7 @@ contract DropERC20_V2 is
     /// @dev Contract level metadata.
     string public contractURI;
 
-    /// @dev Max bps in the thirdweb system.
+    /// @dev Max bps in the egiftcard system.
     uint128 internal constant MAX_BPS = 10_000;
 
     /// @dev The % of primary sales collected as platform fees.

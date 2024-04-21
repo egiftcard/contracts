@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "../../../utils/BaseTest.sol";
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 import { RoyaltyPaymentsLogic } from "contracts/extension/plugin/RoyaltyPayments.sol";
 import { PlatformFee } from "contracts/extension/PlatformFee.sol";

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "@openzeppelin/contracts-upgradeable/utils/structs/BitMapsUpgradeable.sol";
 
 /**
- *  Thirdweb's 'Drop' contracts are distribution mechanisms for tokens.
+ *  Egiftcard's 'Drop' contracts are distribution mechanisms for tokens.
  *
  *  A contract admin (i.e. a holder of `DEFAULT_ADMIN_ROLE`) can set a series of claim conditions,
  *  ordered by their respective `startTimestamp`. A claim condition defines criteria under which

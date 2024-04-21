@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "../interface/IRoyaltyPayments.sol";
 import "../interface/IRoyaltyEngineV1.sol";
@@ -27,10 +27,10 @@ library RoyaltyPaymentsStorage {
 }
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  *
  *  @title   Royalty Payments
- *  @notice  Thirdweb's `RoyaltyPayments` is a contract extension to be used with a marketplace contract.
+ *  @notice  Egiftcard's `RoyaltyPayments` is a contract extension to be used with a marketplace contract.
  *           It exposes functions for fetching royalty settings for a token.
  *           It Supports RoyaltyEngineV1 and RoyaltyRegistry by manifold.xyz.
  */

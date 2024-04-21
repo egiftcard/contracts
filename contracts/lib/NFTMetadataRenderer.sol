@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /* solhint-disable quotes */
 
-/// @author thirdweb
+/// @author egiftcard
 /// credits: Zora
 
 import "./Strings.sol";

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 /// Credits: https://github.com/GNSPS/solidity-bytes-utils/blob/master/contracts/BytesLib.sol
 
 library BytesLib {

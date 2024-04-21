@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 library ReentrancyGuardStorage {
     /// @custom:storage-location erc7201:reentrancy.guard.storage

@@ -1,26 +1,26 @@
 <p align="center">
 <br />
-<a href="https://thirdweb.com"><img src="https://github.com/thirdweb-dev/typescript-sdk/blob/main/logo.svg?raw=true" width="200" alt=""/></a>
+<a href="https://egiftcard.cc"><img src="https://github.com/egiftcard/typescript-sdk/blob/main/logo.svg?raw=true" width="200" alt=""/></a>
 <br />
 </p>
-<h1 align="center">thirdweb Contracts</h1>
+<h1 align="center">egiftcard Contracts</h1>
 <p align="center">
-<a href="https://www.npmjs.com/package/@thirdweb-dev/contracts"><img src="https://img.shields.io/npm/v/@thirdweb-dev/contracts?color=red&logo=npm" alt="npm version"/></a>
-<a href="https://github.com/thirdweb-dev/contracts/actions"><img alt="Build Status" src="https://github.com/thirdweb-dev/contracts/actions/workflows/tests.yml/badge.svg"/></a>
-<a href="https://discord.gg/thirdweb"><img alt="Join our Discord!" src="https://img.shields.io/discord/834227967404146718.svg?color=7289da&label=discord&logo=discord&style=flat"/></a>
+<a href="https://www.npmjs.com/package/@egiftcard/contracts"><img src="https://img.shields.io/npm/v/@egiftcard/contracts?color=red&logo=npm" alt="npm version"/></a>
+<a href="https://github.com/egiftcard/contracts/actions"><img alt="Build Status" src="https://github.com/egiftcard/contracts/actions/workflows/tests.yml/badge.svg"/></a>
+<a href="https://discord.gg/egiftcard"><img alt="Join our Discord!" src="https://img.shields.io/discord/834227967404146718.svg?color=7289da&label=discord&logo=discord&style=flat"/></a>
 
 </p>
-<p align="center"><strong>Collection of smart contracts deployable via the thirdweb SDK, dashboard and CLI</strong></p>
+<p align="center"><strong>Collection of smart contracts deployable via the egiftcard SDK, dashboard and CLI</strong></p>
 <br />
 
 ## Installation
 
 ```shell
 # Forge projects
-forge install https://github.com/thirdweb-dev/contracts
+forge install https://github.com/egiftcard/contracts
 
 # Hardhat / npm based projects
-npm i @thirdweb-dev/contracts
+npm i @egiftcard/contracts
 ```
 
 ```bash
@@ -35,10 +35,10 @@ contracts
 |   |-- interface: "interfaces for all base contracts"
 |   |--  upgradeable: "upgradeable base contracts to build on top of"
 |
-|-- prebuilt: "audited, ready-to-deploy thirdweb smart contracts"
+|-- prebuilt: "audited, ready-to-deploy egiftcard smart contracts"
 |   |-- interface: "interfaces for all prebuilt contracts"
 |   |--[$prebuilt-category]: "feature-based group of prebuilt contracts"
-|   |-- unaudited: "yet-to-audit thirdweb smart contracts"
+|   |-- unaudited: "yet-to-audit egiftcard smart contracts"
 |       |-- [$prebuilt-category]: "feature-based group of prebuilt contracts"
 |
 |-- infra: "onchain infrastructure contracts"
@@ -53,7 +53,7 @@ contracts
 |   |-- openzeppelin: "modified / copied over openzeppelin dependencies"
 |   |-- chainlink: "modified / copied over chainlink dependencies"
 |
-|-- legacy-contracts: "maintained legacy thirdweb contracts"
+|-- legacy-contracts: "maintained legacy egiftcard contracts"
 ```
 
 ## Running Tests
@@ -86,21 +86,21 @@ forge test
 
 ## Pre-built Contracts
 
-Pre-built contracts are written by the thirdweb team, and cover the most common use cases for smart contracts.
+Pre-built contracts are written by the egiftcard team, and cover the most common use cases for smart contracts.
 
-- [DropERC20](https://thirdweb.com/deployer.thirdweb.eth/DropERC20)
-- [DropERC721](https://thirdweb.com/deployer.thirdweb.eth/DropERC721)
-- [DropERC1155](https://thirdweb.com/deployer.thirdweb.eth/DropERC1155)
-- [SignatureDrop](https://thirdweb.com/deployer.thirdweb.eth/SignatureDrop)
-- [Marketplace](https://thirdweb.com/deployer.thirdweb.eth/Marketplace)
-- [Multiwrap](https://thirdweb.com/deployer.thirdweb.eth/Multiwrap)
-- [TokenERC20](https://thirdweb.com/deployer.thirdweb.eth/TokenERC20)
-- [TokenERC721](https://thirdweb.com/deployer.thirdweb.eth/TokenERC721)
-- [TokenERC1155](https://thirdweb.com/deployer.thirdweb.eth/TokenERC1155)
-- [VoteERC20](https://thirdweb.com/deployer.thirdweb.eth/VoteERC20)
-- [Split](https://thirdweb.com/deployer.thirdweb.eth/Split)
+- [DropERC20](https://egiftcard.cc/deployer.egiftcard.eth/DropERC20)
+- [DropERC721](https://egiftcard.cc/deployer.egiftcard.eth/DropERC721)
+- [DropERC1155](https://egiftcard.cc/deployer.egiftcard.eth/DropERC1155)
+- [SignatureDrop](https://egiftcard.cc/deployer.egiftcard.eth/SignatureDrop)
+- [Marketplace](https://egiftcard.cc/deployer.egiftcard.eth/Marketplace)
+- [Multiwrap](https://egiftcard.cc/deployer.egiftcard.eth/Multiwrap)
+- [TokenERC20](https://egiftcard.cc/deployer.egiftcard.eth/TokenERC20)
+- [TokenERC721](https://egiftcard.cc/deployer.egiftcard.eth/TokenERC721)
+- [TokenERC1155](https://egiftcard.cc/deployer.egiftcard.eth/TokenERC1155)
+- [VoteERC20](https://egiftcard.cc/deployer.egiftcard.eth/VoteERC20)
+- [Split](https://egiftcard.cc/deployer.egiftcard.eth/Split)
 
-[Learn more about pre-built contracts](https://portal.thirdweb.com/pre-built-contracts)
+[Learn more about pre-built contracts](https://portal.egiftcard.cc/pre-built-contracts)
 
 ## Extensions
 
@@ -110,7 +110,7 @@ Some blocks come packaged together as Base Contracts, which come with a full set
 
 Other (smaller) blocks are Features, which provide a way for you to pick and choose which individual pieces you want to put into your contract; with full customization of how those features work. These are available at `contracts/extension/`.
 
-[Learn more about extensions](https://portal.thirdweb.com/extensions)
+[Learn more about extensions](https://portal.egiftcard.cc/extensions)
 
 ## Contract Audits
 
@@ -129,15 +129,15 @@ Other (smaller) blocks are Features, which provide a way for you to pick and cho
 
 ## Bug reports
 
-Found a security issue with our smart contracts? Send bug reports to security@thirdweb.com and we'll continue communicating with you from there. We're actively developing a bug bounty program; bug report payouts happen on a case by case basis, for now.
+Found a security issue with our smart contracts? Send bug reports to security@egiftcard.cc and we'll continue communicating with you from there. We're actively developing a bug bounty program; bug report payouts happen on a case by case basis, for now.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at support@thirdweb.com.
+If you have any feedback, please reach out to us at support@egiftcard.cc.
 
 ## Authors
 
-- [thirdweb](https://thirdweb.com)
+- [egiftcard](https://egiftcard.cc)
 
 ## License
 

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 /**
- *  Thirdweb's NFTStake smart contract allows users to stake their ERC-721 NFTs
+ *  Egiftcard's NFTStake smart contract allows users to stake their ERC-721 NFTs
  *  and earn rewards in form of an ERC-20 token.
  *
  *  note:

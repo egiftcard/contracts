@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "../../../utils/BaseTest.sol";
 import { BurnToClaimDropERC721 } from "contracts/prebuilts/unaudited/burn-to-claim-drop/BurnToClaimDropERC721.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 import { TWProxy } from "contracts/infra/TWProxy.sol";
 

@@ -15,8 +15,8 @@ import {
   OptimismGoerli,
   Polygon,
   Sepolia,
-} from "@thirdweb-dev/chains";
-import { ChainId } from "@thirdweb-dev/sdk";
+} from "@egiftcard/chains";
+import { ChainId } from "@egiftcard/sdk";
 import dotenv from "dotenv";
 
 dotenv.config();

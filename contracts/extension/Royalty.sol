@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./interface/IRoyalty.sol";
 
 /**
  *  @title   Royalty
- *  @notice  Thirdweb's `Royalty` is a contract extension to be used with any base contract. It exposes functions for setting and reading
+ *  @notice  Egiftcard's `Royalty` is a contract extension to be used with any base contract. It exposes functions for setting and reading
  *           the recipient of royalty fee and the royalty fee basis points, and lets the inheriting contract perform conditional logic
  *           that uses information about royalty fees, if desired.
  *

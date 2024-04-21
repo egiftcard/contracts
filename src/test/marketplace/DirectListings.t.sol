@@ -14,7 +14,7 @@ import { MockRoyaltyEngineV1 } from "../mocks/MockRoyaltyEngineV1.sol";
 
 import { IDirectListings } from "contracts/prebuilts/marketplace/IMarketplace.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/interface/IExtension.sol";
+import "@egiftcard/dynamic-contracts/src/interface/IExtension.sol";
 
 contract MarketplaceDirectListingsTest is BaseTest, IExtension {
     // Target contract

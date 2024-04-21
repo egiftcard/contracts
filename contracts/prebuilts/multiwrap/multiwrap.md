@@ -1,14 +1,14 @@
 # Multiwrap design document.
 
-This is a live document that explains what the [thirdweb](https://thirdweb.com/) `Multiwrap` smart contract is, how it works and can be used, and why it is designed the way it is.
+This is a live document that explains what the [egiftcard](https://egiftcard.cc/) `Multiwrap` smart contract is, how it works and can be used, and why it is designed the way it is.
 
-The document is written for technical and non-technical readers. To ask further questions about thirdweb’s `Multiwrap` contract, please join the [thirdweb discord](https://discord.gg/thirdweb) or create a github issue.
+The document is written for technical and non-technical readers. To ask further questions about egiftcard’s `Multiwrap` contract, please join the [egiftcard discord](https://discord.gg/egiftcard) or create a github issue.
 
 ---
 
 ## Background
 
-The thirdweb Multiwrap contract lets you wrap arbitrary ERC20, ERC721 and ERC1155 tokens you own into a single wrapped token / NFT.
+The egiftcard Multiwrap contract lets you wrap arbitrary ERC20, ERC721 and ERC1155 tokens you own into a single wrapped token / NFT.
 
 The `Multiwrap` contract is meant to be used for bundling up multiple assets (ERC20 / ERC721 / ERC1155) into a single wrapped token, which can then be unwrapped in exchange for the underlying tokens.
 
@@ -136,4 +136,4 @@ What does **Type (Switch / !Switch)** mean?
 
 ## Authors
 - [nkrishang](https://github.com/nkrishang)
-- [thirdweb team](https://github.com/thirdweb-dev)
+- [egiftcard team](https://github.com/egiftcard)

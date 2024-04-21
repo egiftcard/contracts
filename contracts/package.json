@@ -1,17 +1,17 @@
 {
-  "name": "@thirdweb-dev/contracts",
-  "description": "Collection of smart contracts deployable via the thirdweb SDK, dashboard and CLI",
+  "name": "@egiftcard/contracts",
+  "description": "Collection of smart contracts deployable via the egiftcard SDK, dashboard and CLI",
   "version": "3.13.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thirdweb-dev/contracts.git"
+    "url": "https://github.com/egiftcard/contracts.git"
   },
   "bugs": {
-    "url": "https://github.com/thirdweb-dev/contracts/issues"
+    "url": "https://github.com/egiftcard/contracts/issues"
   },
-  "author": "thirdweb engineering <eng@thirdweb.com>",
-  "homepage": "https://thirdweb.com",
+  "author": "egiftcard engineering <eng@egiftcard.cc>",
+  "homepage": "https://egiftcard.cc",
   "files": [
     "**/*.sol",
     "/abi"
@@ -20,7 +20,7 @@
     "@openzeppelin/contracts": "^4.9.3",
     "@openzeppelin/contracts-upgradeable": "^4.9.3",
     "erc721a-upgradeable": "^3.3.0",
-    "@thirdweb-dev/dynamic-contracts": "^1.2.4"
+    "@egiftcard/dynamic-contracts": "^1.2.4"
   },
   "engines": {
     "node": ">=18.0.0"

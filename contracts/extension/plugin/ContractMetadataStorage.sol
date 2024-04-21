@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  */
 library ContractMetadataStorage {
     /// @custom:storage-location erc7201:contract.metadata.storage

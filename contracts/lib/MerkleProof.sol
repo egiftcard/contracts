@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache 2.0
 pragma solidity ^0.8.0;
 
-/// @author OpenZeppelin, thirdweb
+/// @author OpenZeppelin, egiftcard
 
 library MerkleProof {
     function verify(bytes32[] calldata proof, bytes32 root, bytes32 leaf) internal pure returns (bool, uint256) {

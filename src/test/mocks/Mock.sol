@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "contracts/eip/interface/IERC721.sol";

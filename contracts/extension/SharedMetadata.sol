@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache 2.0
 pragma solidity ^0.8.10;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "../lib/NFTMetadataRenderer.sol";
 import "./interface/ISharedMetadata.sol";

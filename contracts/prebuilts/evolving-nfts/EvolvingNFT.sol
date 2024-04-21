@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -12,7 +12,7 @@ pragma solidity ^0.8.11;
 //   \$$$$  |$$ |  $$ |$$ |$$ |      \$$$$$$$ |\$$$$$\$$$$  |\$$$$$$$\ $$$$$$$  |
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
-import "@thirdweb-dev/dynamic-contracts/src/presets/BaseRouter.sol";
+import "@egiftcard/dynamic-contracts/src/presets/BaseRouter.sol";
 
 import "../../extension/Multicall.sol";
 import "../../extension/upgradeable/Initializable.sol";

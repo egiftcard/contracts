@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 /**
- *  Thirdweb's TokenStake smart contract allows users to stake their ERC-20 Tokens
+ *  Egiftcard's TokenStake smart contract allows users to stake their ERC-20 Tokens
  *  and earn rewards in form of a different ERC-20 token.
  *
  *  note:

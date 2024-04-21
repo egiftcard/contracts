@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./EnglishAuctionsStorage.sol";
 
@@ -23,7 +23,7 @@ import { RoyaltyPaymentsLogic } from "../../../extension/upgradeable/RoyaltyPaym
 import { CurrencyTransferLib } from "../../../lib/CurrencyTransferLib.sol";
 
 /**
- * @author  thirdweb.com
+ * @author  egiftcard.cc
  */
 contract EnglishAuctionsLogic is IEnglishAuctions, ReentrancyGuard, ERC2771ContextConsumer {
     /*///////////////////////////////////////////////////////////////

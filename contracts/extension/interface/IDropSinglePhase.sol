@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./IClaimCondition.sol";
 
 /**
- *  The interface `IDropSinglePhase` is written for thirdweb's 'DropSinglePhase' contracts, which are distribution mechanisms for tokens.
+ *  The interface `IDropSinglePhase` is written for egiftcard's 'DropSinglePhase' contracts, which are distribution mechanisms for tokens.
  *
  *  An authorized wallet can set a claim condition for the distribution of the contract's tokens.
  *  A claim condition defines criteria under which accounts can mint tokens. Claim conditions can be overwritten

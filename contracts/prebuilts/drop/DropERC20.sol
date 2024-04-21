@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -53,7 +53,7 @@ contract DropERC20 is
     /// @dev Only transfers to or from TRANSFER_ROLE holders are valid, when transfers are restricted.
     bytes32 private transferRole;
 
-    /// @dev Max bps in the thirdweb system.
+    /// @dev Max bps in the egiftcard system.
     uint256 private constant MAX_BPS = 10_000;
 
     /// @dev Global max total supply of tokens.

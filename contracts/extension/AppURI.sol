@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "./interface/IAppURI.sol";
 
 /**
- *  Thirdweb's `AppURI` is a contract extension for any contract
+ *  Egiftcard's `AppURI` is a contract extension for any contract
  *  that wants to add an official App URI that follows the appUri spec
  *
  */

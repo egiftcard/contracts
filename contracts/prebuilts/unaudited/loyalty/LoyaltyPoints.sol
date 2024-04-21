@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -60,7 +60,7 @@ contract LoyaltyPoints is
     /// @dev Only REVOKE_ROLE holders can revoke a loyalty card.
     bytes32 private constant REVOKE_ROLE = keccak256("REVOKE_ROLE");
 
-    /// @dev Max bps in the thirdweb system.
+    /// @dev Max bps in the egiftcard system.
     uint256 private constant MAX_BPS = 10_000;
 
     /// @dev Mapping from token owner => total tokens minted to them in the contract's lifetime.

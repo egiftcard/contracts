@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { SUPPORTED_CHAIN_ID, ThirdwebSDK } from "@thirdweb-dev/sdk";
+import { SUPPORTED_CHAIN_ID, EgiftcardSDK } from "@egiftcard/sdk";
 import { readFileSync } from "fs";
 import { chainIdToName } from "./constants";
 
@@ -7,9 +7,9 @@ import { chainIdToName } from "./constants";
 ///// MAKE SURE TO PUT IN THE RIGHT CONTRACT NAME HERE AFTER CREATING A RELEASE FOR IT /////
 //// THE RELEASE SHOULD HAVE THE IMPLEMENTATIONS ALREADY DEPLOYED AND RECORDED (via dashboard) ////
 const releasedContractName = "TokenERC721";
-const privateKey: string = process.env.THIRDWEB_PUBLISHER_PRIVATE_KEY as string;
+const privateKey: string = process.env.EGIFTCARD_PUBLISHER_PRIVATE_KEY as string;
 
-const polygonSDK = ThirdwebSDK.fromPrivateKey(privateKey, "polygon");
+const polygonSDK = EgiftcardSDK.fromPrivateKey(privateKey, "polygon");
 
 async function main() {
   const releaser = await polygonSDK.wallet.getAddress();
@@ -42,7 +42,7 @@ async function main() {
         continue;
       }
 
-      const chainSDK = ThirdwebSDK.fromPrivateKey(privateKey, chainName);
+      const chainSDK = EgiftcardSDK.fromPrivateKey(privateKey, chainName);
       const factoryAddr = prevReleaseMetadata?.factoryDeploymentData?.factoryAddresses?.[chainId];
       if (implementation && factoryAddr) {
         const factory = await chainSDK.getContractFromAbi(
@@ -70,7 +70,7 @@ async function main() {
   }
 
   console.log("All done.");
-  console.log("Release page:", `https://thirdweb.com/${releaser}/${releasedContractName}`);
+  console.log("Release page:", `https://egiftcard.cc/${releaser}/${releasedContractName}`);
 }
 
 main()

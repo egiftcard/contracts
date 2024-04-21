@@ -1,6 +1,6 @@
 import "dotenv/config";
 import {
-  ThirdwebSDK,
+  EgiftcardSDK,
   computeCloneFactoryAddress,
   deployContractDeterministic,
   deployCreate2Factory,
@@ -8,10 +8,10 @@ import {
   fetchAndCacheDeployMetadata,
   getCreate2FactoryAddress,
   getDeploymentInfo,
-  getThirdwebContractAddress,
+  getEgiftcardContractAddress,
   isContractDeployed,
   resolveAddress,
-} from "@thirdweb-dev/sdk";
+} from "@egiftcard/sdk";
 import { Signer } from "ethers";
 import { DEFAULT_CHAINS, apiMap, chainIdApiKey } from "./constants";
 
@@ -19,11 +19,11 @@ import { DEFAULT_CHAINS, apiMap, chainIdApiKey } from "./constants";
 ///// MAKE SURE TO PUT IN THE RIGHT CONTRACT NAME HERE AFTER PUBLISHING IT /////
 //// THE CONTRACT SHOULD BE PUBLISHED WITH THE NEW PUBLISH FLOW ////
 const publishedContractName = "MarketplaceV3";
-const publisherAddress: string = "deployer.thirdweb.eth";
+const publisherAddress: string = "deployer.egiftcard.eth";
 const deployerKey: string = process.env.PRIVATE_KEY as string;
-const secretKey: string = process.env.THIRDWEB_SECRET_KEY as string;
+const secretKey: string = process.env.EGIFTCARD_SECRET_KEY as string;
 
-const polygonSDK = new ThirdwebSDK("polygon", { secretKey });
+const polygonSDK = new EgiftcardSDK("polygon", { secretKey });
 
 async function main() {
   const latest = await polygonSDK.getPublisher().getLatest(publisherAddress, publishedContractName);
@@ -42,12 +42,12 @@ async function main() {
       }
 
       console.log(`Deploying ${publishedContractName} on ${chain.slug}`);
-      const sdk = ThirdwebSDK.fromPrivateKey(deployerKey, chain, { secretKey }); // can also hardcode the chain here
+      const sdk = EgiftcardSDK.fromPrivateKey(deployerKey, chain, { secretKey }); // can also hardcode the chain here
       const signer = sdk.getSigner() as Signer;
       // const chainId = (await sdk.getProvider().getNetwork()).chainId;
 
       try {
-        const implAddr = await getThirdwebContractAddress(
+        const implAddr = await getEgiftcardContractAddress(
           publishedContractName,
           chain.chainId,
           sdk.storage,
@@ -147,12 +147,12 @@ async function main() {
     console.log("---------- Verification ---------");
     console.log();
     for (const chain of DEFAULT_CHAINS) {
-      const sdk = new ThirdwebSDK(chain, {
+      const sdk = new EgiftcardSDK(chain, {
         secretKey,
       });
       console.log("Verifying on: ", chain.slug);
       try {
-        await sdk.verifier.verifyThirdwebContract(
+        await sdk.verifier.verifyEgiftcardContract(
           publishedContractName,
           apiMap[chain.chainId],
           chainIdApiKey[chain.chainId] as string,

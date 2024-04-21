@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |
@@ -13,7 +13,7 @@ pragma solidity ^0.8.11;
 //    \____/ \__|  \__|\__|\__|       \_______| \_____\____/  \_______|\_______/
 
 import { TWRegistry } from "./TWRegistry.sol";
-import "./interface/IThirdwebContract.sol";
+import "./interface/IEgiftcardContract.sol";
 import "../extension/interface/IContractFactory.sol";
 
 import { AccessControlEnumerable, Context } from "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
@@ -95,7 +95,7 @@ contract TWFactory is Multicall, ERC2771Context, AccessControlEnumerable, IContr
     function addImplementation(address _implementation) external {
         require(hasRole(FACTORY_ROLE, _msgSender()), "not admin.");
 
-        IThirdwebContract module = IThirdwebContract(_implementation);
+        IEgiftcardContract module = IEgiftcardContract(_implementation);
 
         bytes32 ctype = module.contractType();
         require(ctype.length > 0, "invalid module");

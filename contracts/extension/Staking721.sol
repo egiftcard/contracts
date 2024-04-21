@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.11;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "../external-deps/openzeppelin/security/ReentrancyGuard.sol";
 import "../external-deps/openzeppelin/utils/math/SafeMath.sol";

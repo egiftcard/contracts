@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "../interface/IPermissionsEnumerable.sol";
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  */
 library PermissionsEnumerableStorage {
     /// @custom:storage-location erc7201:permissions.enumerable.storage

@@ -7,7 +7,7 @@ pragma solidity ^0.8.11;
 
 import "../utils/AccountCore.sol";
 
-import "@thirdweb-dev/dynamic-contracts/src/presets/BaseRouter.sol";
+import "@egiftcard/dynamic-contracts/src/presets/BaseRouter.sol";
 
 //   $$\     $$\       $$\                 $$\                         $$\
 //   $$ |    $$ |      \__|                $$ |                        $$ |

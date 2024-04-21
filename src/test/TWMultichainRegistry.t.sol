@@ -5,7 +5,7 @@ pragma solidity ^0.8.11;
 import "./utils/BaseTest.sol";
 import "contracts/infra/interface/ITWMultichainRegistry.sol";
 import { TWMultichainRegistry } from "contracts/infra/TWMultichainRegistry.sol";
-import "./mocks/MockThirdwebContract.sol";
+import "./mocks/MockEgiftcardContract.sol";
 import "contracts/extension/interface/plugin/IPluginMap.sol";
 
 interface ITWMultichainRegistryData {
@@ -39,7 +39,7 @@ contract TWMultichainRegistryTest is ITWMultichainRegistryData, BaseTest {
         for (uint256 i = 0; i < total; i += 1) {
             chainIds.push(i);
             vm.prank(deployer_);
-            address depl = address(new MockThirdwebContract());
+            address depl = address(new MockEgiftcardContract());
             deploymentAddresses.push(depl);
         }
 

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
 
-/// @author thirdweb
+/// @author egiftcard
 
 import "../interface/IPermissions.sol";
 import "./PermissionsStorage.sol";
 import "../../lib/Strings.sol";
 
 /**
- *  @author  thirdweb.com
+ *  @author  egiftcard.cc
  *
  *  @title   Permissions
  *  @dev     This contracts provides extending-contracts with role-based access control mechanisms
