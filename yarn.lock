@@ -42,7 +42,7 @@
   resolved "https://registry.yarnpkg.com/@egiftcard/contracts/-/contracts-2.3.0-6.tgz#0e8eb0935af4136bd14b33149be0a183c62e288c"
   integrity sha512-0KH4v3ztyyhq+M72eTW069Iv53HvEtmzVaANJ/0vC3GmCzrfv9RUMrDLgqRNMqbqhMnNSI7HqdslIF5smgH9ag==
 
-"@egiftcard/dynamic-contracts@^1.2.4":
+"@egiftcard/dynamic-contracts@^1.2.6":
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/@egiftcard/dynamic-contracts/-/dynamic-contracts-1.2.6.tgz#3b387a5fd41597981e214020bb5569815cb3edba"
   integrity sha512-PJBk+0jE7A/1eaWvl0oZj8Pgf+qeoYHDmdgaW2ULxe2FWC0PUnIbTe1HFOewFq/IZJwfcoHoZEmXr5fo3ayq8w==
