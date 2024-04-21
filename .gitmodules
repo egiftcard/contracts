@@ -49,3 +49,6 @@
 [submodule "lib/seaport-sol"]
 	path = lib/seaport-sol
 	url = https://github.com/projectopensea/seaport-sol
+[submodule "dynamic-contracts"]
+	path = dynamic-contracts
+	url = https://github.com/egiftcard/dynamic-contracts.git
