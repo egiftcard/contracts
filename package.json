@@ -60,6 +60,6 @@
     "aabenchmark": "forge test --mc AABenchmarkPrepare && forge test --mc ProfileEgiftcardAccount -vvv"
   },
   "dependencies": {
-    "@egiftcard/contracts": "^3.14.0"
+    "@egiftcard/contracts": "^2.3.0-6"
   }
 }
